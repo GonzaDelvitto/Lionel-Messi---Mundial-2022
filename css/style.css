@@ -183,12 +183,21 @@ a:focus-visible {
    RESPONSIVE HERO IMAGE
 ===================================================== */
 @media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
   .hero-image {
     margin: 2rem auto 0;
     max-width: 320px;
   }
 }
-
 
 /* =====================================================
    SECCIONES GENERALES
@@ -270,6 +279,7 @@ a:focus-visible {
 .stats-table td {
   padding: 0.9rem;
   text-align: center;
+  color: #f1f1f1;
 }
 
 .stats-table thead {
@@ -359,11 +369,39 @@ a:focus-visible {
    RESPONSIVE
 ===================================================== */
 @media (max-width: 900px) {
-  .hero {
+  .nav-links {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .logo {
+    flex-basis: 100%;
     text-align: center;
+    margin-bottom: 0.8rem;
   }
 
   .nav-links {
-    gap: 1.2rem;
+    justify-content: center;
+    flex-basis: 100%;
+    gap: 1rem;
+  }
+
+  .stats-grid,
+  .legacy-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: clamp(2rem, 7vw, 3rem);
   }
 }
