@@ -1,0 +1,51 @@
+[
+  {
+    "fase": "Fase de Grupos",
+    "partido": "Argentina vs Arabia Saudita",
+    "resultado": "1–2",
+    "detalle": "En el debut de Argentina en el Mundial, la sorpresa llegó con la derrota 1-2 ante Arabia Saudita. Messi tuvo la oportunidad de abrir el marcador desde el punto penal, y lo convirtió con maestría, marcando el único gol argentino. Sin embargo, Arabia Saudita supo aprovechar las contras y terminó dando la sorpresa con dos goles en la segunda mitad. Fue un partido duro que encendió las alarmas para el equipo.",
+    "fecha": "22 de noviembre de 2022"
+  },
+  {
+    "fase": "Fase de Grupos",
+    "partido": "Argentina vs México",
+    "resultado": "2–0",
+    "detalle": "En su segundo encuentro, Argentina mostró una versión más sólida y ordenada. Messi abrió el marcador con un gol clave desde afuera del área, demostrando su calidad y confianza. El equipo dominó el partido y logró un triunfo por 2-0 que levantó la moral del grupo y dejó en claro que iban a pelear con todo.",
+    "fecha": "26 de noviembre de 2022"
+  },
+  {
+    "fase": "Fase de Grupos",
+    "partido": "Argentina vs Polonia",
+    "resultado": "2–0",
+    "detalle": "Argentina cerró la fase de grupos con una actuación donde Messi fue el líder indiscutido, participando activamente en cada jugada ofensiva. El equipo impuso su ritmo y logró un 2-0 tranquilo, con mucha autoridad, asegurando el pase a la siguiente ronda.",
+    "fecha": "30 de noviembre de 2022"
+  },
+  {
+    "fase": "Octavos de Final",
+    "partido": "Argentina vs Australia",
+    "resultado": "2–1",
+    "detalle": "En un partido intenso, Messi fue la figura clave y anotó el primer gol, dándole confianza al equipo. Australia puso resistencia, pero Argentina supo manejar los tiempos y asegurar la victoria 2-1, avanzando a cuartos de final con mucha garra.",
+    "fecha": "3 de diciembre de 2022"
+  },
+  {
+    "fase": "Cuartos de Final",
+    "partido": "Argentina vs Países Bajos",
+    "resultado": "2–2 (4–3 penales)",
+    "detalle": "Un encuentro muy tenso y decisivo que terminó 2-2 en tiempo reglamentario. Messi volvió a brillar con un gol y una asistencia clave, manteniendo al equipo con ventaja. El partido se definió en penales, donde Argentina ganó 4-3, dejando afuera a un rival fuerte y demostrando carácter.",
+    "fecha": "9 de diciembre de 2022"
+  },
+  {
+    "fase": "Semifinal",
+    "partido": "Argentina vs Croacia",
+    "resultado": "3–0",
+    "detalle": "Argentina dominó el partido con claridad, ganando 3-0. Messi convirtió un penal y entregó una asistencia memorable para Julián Álvarez, mostrando una conexión perfecta y un control absoluto del juego. Fue un paso más hacia la final con una actuación impecable.",
+    "fecha": "13 de diciembre de 2022"
+  },
+  {
+    "fase": "Final",
+    "partido": "Argentina vs Francia",
+    "resultado": "3–3 (4–2 penales)",
+    "detalle": "Un partido histórico que terminó 3-3 después de un espectáculo de fútbol increíble. Messi anotó un doblete y fue el alma del equipo durante todo el encuentro. La definición en penales fue emocionante y Argentina se consagró campeón del mundo 4-2. Fue la gloria máxima para Messi y todo el equipo, un momento que quedará para siempre en la historia.",
+    "fecha": "18 de diciembre de 2022"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "intro": "Lionel Messi fue el capitán y principal figura de la Selección Argentina durante el Mundial de Qatar 2022, torneo en el que logró consagrarse campeón del mundo por primera vez. Su liderazgo, talento y compromiso fueron determinantes para que el equipo alcanzara la gloria máxima tras 36 años, guiando con su calidad futbolística y su carácter a toda una nación hacia el sueño más ansiado.",
+  "participacion": "Messi disputó los siete partidos del torneo, siendo titular en todos ellos. Fue decisivo desde la fase de grupos hasta la final, aportando goles, asistencias y liderazgo dentro del campo. Su influencia fue clave para mantener la cohesión del equipo, inspirando a sus compañeros y marcando la diferencia en momentos decisivos de cada encuentro, demostrando una combinación única de habilidad técnica, inteligencia táctica y fortaleza mental.",
+  "stats": [
+    { "label": "Partidos jugados", "value": "7" },
+    { "label": "Goles", "value": "7" },
+    { "label": "Asistencias", "value": "3" },
+    { "label": "Minutos jugados", "value": "690" },
+    { "label": "Premio", "value": "Balón de Oro" }
+  ]
+}

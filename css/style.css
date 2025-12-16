@@ -1,0 +1,369 @@
+/* =====================================================
+   RESET GENERAL
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #0b0d12;
+  color: #f1f1f1;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  max-width: 75ch;
+}
+
+a:focus-visible {
+  outline: 2px solid #6ec1e4;
+  outline-offset: 4px;
+}
+
+/* =====================================================
+   HEADER / NAVBAR
+===================================================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 13, 18, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #d4af37;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #6ec1e4;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =====================================================
+   HERO / PORTADA (INDEX)
+   👉 Acá solo cambiás la imagen de fondo
+===================================================== */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
+
+  /* REEMPLAZÁ ESTA IMAGEN */
+  background-image: url('../img/messi.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(43, 15, 63, 0.65),
+    rgba(11, 13, 18, 0.95)
+  );
+}
+
+.hero-content {
+  position: relative;
+  max-width: 650px;
+}
+
+.hero-content h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 1rem 0;
+  color: #6ec1e4;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.hero-content p {
+  margin-top: 1rem;
+  color: #a1a1aa;
+}
+
+/* =====================================================
+   HERO IMAGE MESSI
+===================================================== */
+.hero-image {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  object-fit: cover;
+
+  /* Estética premium */
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Glow sutil */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  inset: -15px;
+  background: radial-gradient(
+    circle,
+    rgba(110, 193, 228, 0.15),
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+/* =====================================================
+   RESPONSIVE HERO IMAGE
+===================================================== */
+@media (max-width: 900px) {
+  .hero-image {
+    margin: 2rem auto 0;
+    max-width: 320px;
+  }
+}
+
+
+/* =====================================================
+   SECCIONES GENERALES
+===================================================== */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  color: #a1a1aa;
+}
+
+/* =====================================================
+   GRIDS / CARDS / STATS
+===================================================== */
+.stats-grid,
+.legacy-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat,
+.legacy-card,
+.timeline-item {
+  background: #161922;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat:hover,
+.legacy-card:hover,
+.timeline-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+.timeline {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item span {
+  font-size: 0.8rem;
+  color: #6ec1e4;
+}
+
+/* =====================================================
+   TABLAS
+===================================================== */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.stats-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 0.9rem;
+  text-align: center;
+}
+
+.stats-table thead {
+  background: #161922;
+}
+
+.stats-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =====================================================
+   LOADER
+===================================================== */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0b0d12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.loader-content span {
+  color: #d4af37;
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.loader-bar {
+  width: 180px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-bar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #6ec1e4;
+  animation: load 1.2s ease infinite;
+}
+
+@keyframes load {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+/* =====================================================
+   ANIMACIONES GENERALES
+===================================================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+  .hero {
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+}

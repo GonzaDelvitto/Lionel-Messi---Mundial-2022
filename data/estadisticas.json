@@ -1,0 +1,19 @@
+{
+  "resumen": [
+    { "label": "Partidos jugados", "value": "7" },
+    { "label": "Goles", "value": "7" },
+    { "label": "Asistencias", "value": "3" },
+    { "label": "Minutos jugados", "value": "690" },
+    { "label": "Penales convertidos", "value": "4" },
+    { "label": "Premio individual", "value": "Balón de Oro" }
+  ],
+  "partidos": [
+    { "nombre": "Arabia Saudita", "goles": 1, "asistencias": 0, "minutos": 90 },
+    { "nombre": "México", "goles": 1, "asistencias": 0, "minutos": 90 },
+    { "nombre": "Polonia", "goles": 0, "asistencias": 0, "minutos": 90 },
+    { "nombre": "Australia", "goles": 1, "asistencias": 0, "minutos": 90 },
+    { "nombre": "Países Bajos", "goles": 1, "asistencias": 1, "minutos": 120 },
+    { "nombre": "Croacia", "goles": 1, "asistencias": 1, "minutos": 90 },
+    { "nombre": "Francia", "goles": 2, "asistencias": 1, "minutos": 120 }
+  ]
+}

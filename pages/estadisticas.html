@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estadísticas – Mundial 2022</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <h1 class="logo">Mundial 2022</h1>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="partidos.html">Partidos</a></li>
+      <li><a href="estadisticas.html">Estadísticas</a></li>
+      <li><a href="legado.html">Legado</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="section">
+  <h3>Estadísticas de Lionel Messi</h3>
+  <p>
+    Resumen numérico del rendimiento de Lionel Messi durante
+    el Mundial de Qatar 2022.
+  </p>
+
+  <div class="stats-grid" id="stats-grid"></div>
+
+  <h3 style="margin-top:3rem;">Rendimiento por partido</h3>
+  <div class="table-wrapper">
+    <table class="stats-table" id="stats-table">
+      <thead>
+        <tr>
+          <th>Partido</th>
+          <th>Goles</th>
+          <th>Asistencias</th>
+          <th>Minutos</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+
+<div id="loader">
+  <div class="loader-content">
+    <span>QATAR 2022</span>
+    <div class="loader-bar"></div>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
